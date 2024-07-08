@@ -4,11 +4,13 @@ const employees = [
     {id: 1, name: "Bob Johnson", age: 35, department: 'Finance', salary: 60000}
 ]
 
-//Function to display all Employees
-const totalEmployees = employees.map((employee, index) => 
-    `<p>${employee.id}: ${employee.name} - ${employee.department} - $${employee.salary}</p>`).join('');
-    document.getElementById('employeesDetails').innerHTML = totalEmployees;
-
+//function to display all employees
+function displayEmployees(){
+    const totalEmployees = employees.map(function(employee, index){
+        return `<p>${employee.id}: ${employee.name} - ${employee.department} - $${employee.salary}</p>`;
+    }).join('');
+    document.getElementById('employeeDetails').innerHTML = totalEmployees;
+}
 
 function calculateTotalSalaries(){
     const totalSalaries = employees.reduce((acc, employee) => acc + employee.salary, 0);
