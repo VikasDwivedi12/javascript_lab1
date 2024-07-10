@@ -37,3 +37,13 @@ function clearInputs(){
     document.getElementById('bookDescription').value = '';
     document.getElementById('pagesNumber').value = '';
 }
+
+function deleteBook(){
+    books.pop();
+    showBooks();
+}
+
+function clearLibrary(){
+    books = [];
+    showBooks();
+}
