@@ -61,6 +61,8 @@ body{
 }
 .container{
     padding: 10rem;
+    display: flex;
+    justify-content: space-between;
 }
 .mainhead{
     margin-bottom: 2rem;
@@ -68,4 +70,27 @@ body{
 .bookBtn:hover{
     background-color: royalblue;
     cursor: pointer;
+}
+.result{
+    width: 25vw;
+    background-color: aliceblue;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.result img{
+    width: 100%;
+}
+.result button{
+    margin-top: 1rem;
+    padding: 0.5rem 0.7rem;
+    background-color: #45ae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.result h1{
+    margin: 10px 0;
 }
